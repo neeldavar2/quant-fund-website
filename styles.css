@@ -1,3 +1,6 @@
+/* Import Montserrat Light */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 /* Reset some default browser styles */
 * {
     margin: 0;
@@ -34,7 +37,8 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: #000;
-    font-weight: bold;
+    font-weight: 300; /* Montserrat Light weight */
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
 }
 
 .logo {
@@ -60,29 +64,9 @@ header nav ul li a {
     object-position: 0 -50px; /* Crops the top of the image */
 }
 
-/* Positioning and styling for logo and site title */
-.site-title {
-    font-size: 24px;
-    color: #000;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.logo img {
-    height: 60px; /* Adjust this as needed for logo size */
-    margin-right: 15px; /* Space between logo and title */
-}
-
 h1 {
     font-size: 36px;
     font-weight: bold;
     color: #000;
 }
-
 
