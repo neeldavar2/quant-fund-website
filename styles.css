@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
 }
 
 header {
@@ -15,45 +15,74 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: white;
+    z-index: 1000;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     list-style-type: none;
 }
 
-nav ul li {
-    margin-right: 20px;
+header nav ul li {
+    margin: 0 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
-    color: gray;
-    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img {
-    height: 50px;
+    height: 50px; /* Adjust the height of the logo */
 }
 
 .hero {
+    margin-top: 100px; /* Create space for the fixed header */
     position: relative;
+    overflow: hidden;
 }
 
 .hero img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    object-position: 0 -50px; /* Crops the top of the image */
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero img {
-        object-fit: contain;
-    }
+/* Positioning and styling for logo and site title */
+.site-title {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px; /* Adjust this as needed for logo size */
+    margin-right: 15px; /* Space between logo and title */
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+
+
