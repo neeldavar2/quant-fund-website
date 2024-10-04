@@ -61,7 +61,7 @@ header nav ul li a {
     width: 100%;
     height: auto;
     object-fit: cover;
-    object-position: 0 -200px; /* Crops the top of the image */
+    object-position: 0 -500px; /* Crops the top of the image */
 }
 
 h1 {
